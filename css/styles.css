@@ -506,6 +506,12 @@ transform: translate(-50%, -50%) scale(0.9);
   width: 18px;
   height: 18px;
 }
+textarea{
+  resize: none;
+}
+.modal-form{
+  display: flex;
+}
 
 /* ----------------------------footer -----------------------*/
 .adress {
@@ -590,9 +596,11 @@ transform: translate(-50%, -50%) scale(0.9);
   align-items: baseline;
   fill: #ffffff;
 }
+/* --------------------подпишитесь------------------ */
 .subscribe-container{
   display: flex;
   align-items: center;
+  margin-top: 20px;
 }
 .btn-subscribe{
   display: flex;
@@ -601,6 +609,15 @@ transform: translate(-50%, -50%) scale(0.9);
 }
 .subscribe-icon{
   margin-left: 10px;
+}
+.subscribe-input{
+width: 358px;
+height: 50px;
+padding-left: 16px;
+border: 1px solid rgba(255, 255, 255, 0.3);
+/* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15)); */
+border-radius: 4px;
+background-color: inherit;
 }
 /* ---------------------------portfolio--------------------- */
 .examples-title {

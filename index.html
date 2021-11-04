@@ -61,7 +61,9 @@
           <h1 class="hero-title">
             Эффективные решения <br />для вашего бизнеса
           </h1>
-          <button type="button" class="button primary" data-modal-open>Заказать услугу</button>
+          <button type="button" class="button primary" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
       </section>
 
@@ -389,17 +391,22 @@
     <!-- Модальное окно -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal-box">
-        <p>Оставьте свои данные, мы вам перезвоним.
-        </p>
-        <form action="">
+        <p>Оставьте свои данные, мы вам перезвоним.</p>
+        <form action="" class="modal-form">
           <label for="user-name">Имя</label>
-          <input type="text" name="user-name" id="user-name">
+          <input type="text" name="user-name" id="user-name" />
 
           <label for="user-tel">Телефон</label>
-          <input type="tel" name="user-tel" id="user-tel">
+          <input type="tel" name="user-tel" id="user-tel" />
 
           <label for="user-mail">Почта</label>
-          <input type="email" name="user-mail" id="user-mail">
+          <input type="email" name="user-mail" id="user-mail" />
+
+          <label for="comment">Комментарий</label>
+          <textarea name="comment" id="comment" rows="10"></textarea>
+
+          <input type="checkbox" name="policy" id="policy" />
+          <label for="policy">Соглашаюсь с рассылкой и принимаю Условия договора</label>
 
           <button type="submit">Отправить</button>
         </form>
@@ -477,17 +484,21 @@
           <p>подпишитесь на рассылку</p>
           <div class="subscribe-container">
             <form action="">
-            <label for="user-mail-footer">E-mail</label>  
-            <input type="text" name="user-mail" id="user-mail-footer">                      
-          </form>
-          <button type="submit" class="button primary btn-subscribe">
-            Подписаться
-            <svg class="modal-icon subscribe-icon">
-              <use href="./images/sprite.svg#icon-icon-send"></use>
-          </svg>
-          </button>
+              <input
+                class="subscribe-input"
+                type="text"
+                name="user-mail"
+                id=""
+                placeholder="E-mail"
+              />
+            </form>
+            <button type="submit" class="button primary btn-subscribe">
+              Подписаться
+              <svg class="modal-icon subscribe-icon">
+                <use href="./images/sprite.svg#icon-icon-send"></use>
+              </svg>
+            </button>
           </div>
-          
         </div>
       </div>
     </footer>
