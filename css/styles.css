@@ -590,8 +590,18 @@ transform: translate(-50%, -50%) scale(0.9);
   align-items: baseline;
   fill: #ffffff;
 }
-
-
+.subscribe-container{
+  display: flex;
+  align-items: center;
+}
+.btn-subscribe{
+  display: flex;
+  align-items: center;
+  margin-left: 12px;
+}
+.subscribe-icon{
+  margin-left: 10px;
+}
 /* ---------------------------portfolio--------------------- */
 .examples-title {
   margin-bottom: 4px;

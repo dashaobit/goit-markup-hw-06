@@ -389,9 +389,20 @@
     <!-- Модальное окно -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal-box">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,
-          similique.
+        <p>Оставьте свои данные, мы вам перезвоним.
         </p>
+        <form action="">
+          <label for="user-name">Имя</label>
+          <input type="text" name="user-name" id="user-name">
+
+          <label for="user-tel">Телефон</label>
+          <input type="tel" name="user-tel" id="user-tel">
+
+          <label for="user-mail">Почта</label>
+          <input type="email" name="user-mail" id="user-mail">
+
+          <button type="submit">Отправить</button>
+        </form>
         <button class="button modal-btn" data-modal-close>
           <svg class="modal-icon">
             <use href="./images/sprite.svg#icon-close-black-18dp-2-1"></use>
@@ -460,6 +471,23 @@
               </a>
             </li>
           </ul>
+        </div>
+
+        <div class="icon-container">
+          <p>подпишитесь на рассылку</p>
+          <div class="subscribe-container">
+            <form action="">
+            <label for="user-mail-footer">E-mail</label>  
+            <input type="text" name="user-mail" id="user-mail-footer">                      
+          </form>
+          <button type="submit" class="button primary btn-subscribe">
+            Подписаться
+            <svg class="modal-icon subscribe-icon">
+              <use href="./images/sprite.svg#icon-icon-send"></use>
+          </svg>
+          </button>
+          </div>
+          
         </div>
       </div>
     </footer>
