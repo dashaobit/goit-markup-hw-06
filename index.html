@@ -395,42 +395,72 @@
         <form action="" class="modal-form">
           <div class="form-field">
             <label for="user-name">Имя</label>
-            <input type="text" name="user-name" id="user-name" class="form-input" />
-            <svg class="icon-modal">
-              <use href="./images/sprite.svg#icon-person-black-18dp"></use>
-            </svg>
+            <div class="box-input">
+              <input
+                type="text"
+                name="user-name"
+                id="user-name"
+                class="form-input"
+              />
+              <svg class="icon-modal">
+                <use href="./images/sprite.svg#icon-person"></use>
+              </svg>
+            </div>
           </div>
 
           <div class="form-field">
             <label for="user-tel">Телефон</label>
-            <input type="tel" name="user-tel" id="user-tel" class="form-input" />
-            <svg class="icon-modal">
-              <use href="./images/sprite.svg#icon-phone-black-18dp"></use>
-            </svg>
+            <div class="box-input">
+              <input
+                type="tel"
+                name="user-tel"
+                id="user-tel"
+                class="form-input"
+              />
+              <svg class="icon-modal">
+                <use href="./images/sprite.svg#icon-phone"></use>
+              </svg>
+            </div>
           </div>
 
           <div class="form-field">
             <label for="user-mail">Почта</label>
-            <input type="email" name="user-mail" id="user-mail" class="form-input" />
-            <svg class="icon-modal">
-              <use href="./images/sprite.svg#icon-email-black-18dp"></use>
-            </svg>
+            <div class="box-input">
+              <input
+                type="email"
+                name="user-mail"
+                id="user-mail"
+                class="form-input"
+              />
+              <svg class="icon-modal">
+                <use href="./images/sprite.svg#icon-email"></use>
+              </svg>
+            </div>
           </div>
 
           <div class="form-field">
             <label for="comment">Комментарий</label>
-            <textarea name="comment" id="comment" rows="10" placeholder="Введите текст" class="form-input"></textarea>
+            <textarea
+              name="comment"
+              id="comment"
+              rows="10"
+              placeholder="Введите текст"
+              class="form-input"
+            ></textarea>
           </div>
 
           <div class="form-field-policy">
             <input type="checkbox" name="policy" id="policy" />
-            <label for="policy">Соглашаюсь с рассылкой и принимаю 
+            <label for="policy"
+              >Соглашаюсь с рассылкой и принимаю
               <a href="" class="link-contract">Условия договора</a>
             </label>
           </div>
 
           <div class="form-field-btn">
-              <button type="submit" class="button primary btn-send">Отправить</button>
+            <button type="submit" class="button primary btn-send">
+              Отправить
+            </button>
           </div>
         </form>
         <button class="button modal-btn" data-modal-close>
