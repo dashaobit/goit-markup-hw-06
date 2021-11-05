@@ -391,24 +391,47 @@
     <!-- Модальное окно -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal-box">
-        <p>Оставьте свои данные, мы вам перезвоним.</p>
+        <b class="modal-box-text">Оставьте свои данные, мы вам перезвоним</b>
         <form action="" class="modal-form">
-          <label for="user-name">Имя</label>
-          <input type="text" name="user-name" id="user-name" />
+          <div class="form-field">
+            <label for="user-name">Имя</label>
+            <input type="text" name="user-name" id="user-name" class="form-input" />
+            <svg class="icon-modal">
+              <use href="./images/sprite.svg#icon-person-black-18dp"></use>
+            </svg>
+          </div>
 
-          <label for="user-tel">Телефон</label>
-          <input type="tel" name="user-tel" id="user-tel" />
+          <div class="form-field">
+            <label for="user-tel">Телефон</label>
+            <input type="tel" name="user-tel" id="user-tel" class="form-input" />
+            <svg class="icon-modal">
+              <use href="./images/sprite.svg#icon-phone-black-18dp"></use>
+            </svg>
+          </div>
 
-          <label for="user-mail">Почта</label>
-          <input type="email" name="user-mail" id="user-mail" />
+          <div class="form-field">
+            <label for="user-mail">Почта</label>
+            <input type="email" name="user-mail" id="user-mail" class="form-input" />
+            <svg class="icon-modal">
+              <use href="./images/sprite.svg#icon-email-black-18dp"></use>
+            </svg>
+          </div>
 
-          <label for="comment">Комментарий</label>
-          <textarea name="comment" id="comment" rows="10"></textarea>
+          <div class="form-field">
+            <label for="comment">Комментарий</label>
+            <textarea name="comment" id="comment" rows="10" placeholder="Введите текст" class="form-input"></textarea>
+          </div>
 
-          <input type="checkbox" name="policy" id="policy" />
-          <label for="policy">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+          <div class="form-field-policy">
+            <input type="checkbox" name="policy" id="policy" />
+            <label for="policy">Соглашаюсь с рассылкой и принимаю 
+              <a href="" class="link-contract">Условия договора</a>
+            </label>
+          </div>
 
-          <button type="submit">Отправить</button>
+          <div class="form-field-btn">
+              <button type="submit" class="button primary btn-send">Отправить</button>
+          </div>
         </form>
         <button class="button modal-btn" data-modal-close>
           <svg class="modal-icon">
@@ -484,11 +507,12 @@
           <p>подпишитесь на рассылку</p>
           <div class="subscribe-container">
             <form action="">
+              <!-- <label for="subscribe">E-mail</label> -->
               <input
                 class="subscribe-input"
                 type="text"
                 name="user-mail"
-                id=""
+                id="subscribe"
                 placeholder="E-mail"
               />
             </form>
