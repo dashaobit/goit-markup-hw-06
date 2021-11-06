@@ -580,7 +580,6 @@ color: var(--title-text-color);
 text-align: center;
 }
 .form-field-policy{
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -601,26 +600,32 @@ text-align: center;
   align-items: center;
   justify-content: center;
 }
+
 /* квадратик Я соглашаюсь с Условиями договора */
 .checkbox{
   position: absolute;
   appearance: none;
   -webkit-appearance: none;
 }
+.label-checkbox{
+  display: block;
+}
 .icon-checkbox{
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translate(0, -50%);
+  display: block;
   width: 16px;
-  height: 16px;
-  /* background-color: tomato; */
-  background-image: url(./images/sprite.svg#icon-checkbox-black);
+  height: 15px;
+  margin-right: 10px;
+  border: 2px solid #212121;
+  border-radius: 2px;
 }
-.checkbox:checked ~ .icon-checkbox{
-  /* background-color: black; */
-  background-image: url(./images/sprite.svg#icon-check-mark);
+.checkbox:checked + .icon-checkbox{
+  background-color: var(--acсent-background-color);
+  border-color: var(--acсent-background-color);
+  background-image: url(../images/check-icon.svg);
+  background-size: contain;
+  background-origin: border-box;
 }
+
 
 /* ----------------------------footer -----------------------*/
 .adress {
