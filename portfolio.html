@@ -274,7 +274,7 @@
     </main>
 
     <!-- подвал -->
-    <footer class="page-footer">
+  <footer class="page-footer">
       <div class="container container-footer">
         <div>
           <a href="/" class="logo link footer-logo"
@@ -333,6 +333,28 @@
               </a>
             </li>
           </ul>
+        </div>
+
+        <div class="icon-container">
+          <p>подпишитесь на рассылку</p>
+          <div class="subscribe-container">
+            <form action="">
+              <!-- <label for="subscribe">E-mail</label> -->
+              <input
+                class="subscribe-input"
+                type="text"
+                name="user-mail"
+                id="subscribe"
+                placeholder="E-mail"
+              />
+            </form>
+            <button type="submit" class="button primary btn-subscribe">
+              Подписаться
+              <svg class="modal-icon subscribe-icon">
+                <use href="./images/sprite.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </footer>
